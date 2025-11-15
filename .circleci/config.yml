@@ -1,0 +1,81 @@
+version: 2.1
+
+executors:
+  python-docker-executor:
+    docker:
+      - image: cimg/python:3.10
+    working_directory: ~/repo
+    environment:
+      DOCKER_BUILDKIT: 1
+
+jobs:
+  build_docker_image:
+    executor: python-docker-executor
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      ## Install Google Cloud SDK with proper key for Ubuntu Jammy
+      - run:
+          name: Install Google Cloud SDK
+          command: |
+            sudo apt-get update && sudo apt-get install -y curl apt-transport-https ca-certificates gnupg
+            sudo mkdir -p /usr/share/keyrings
+            curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
+            echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee /etc/apt/sources.list.d/google-cloud-sdk.list
+            sudo apt-get update && sudo apt-get install -y google-cloud-cli
+            gcloud version
+
+      ## Authenticate and push Docker image to Artifact Registry
+      - run:
+          name: Authenticate and Push Docker Image
+          command: |
+            echo "$GCLOUD_SERVICE_KEY" | base64 --decode > gcp-key.json
+            gcloud auth activate-service-account --key-file=gcp-key.json
+            gcloud auth configure-docker us-central1-docker.pkg.dev
+
+            docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/llmops-repo/medical-app:latest .
+            docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/llmops-repo/medical-app:latest
+
+  deploy_to_gke:
+    executor: python-docker-executor
+    steps:
+      - checkout
+      - setup_remote_docker
+
+      ## Install Google Cloud SDK
+      - run:
+          name: Install Google Cloud SDK + kubectl + GKE auth plugin
+          command: |
+            sudo apt-get update && sudo apt-get install -y curl apt-transport-https ca-certificates gnupg
+            sudo mkdir -p /usr/share/keyrings
+            curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo gpg --dearmor -o /usr/share/keyrings/cloud.google.gpg
+            echo "deb [signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee /etc/apt/sources.list.d/google-cloud-sdk.list
+            sudo apt-get update
+            # Install gcloud, kubectl, and GKE auth plugin via apt
+            sudo apt-get install -y google-cloud-cli kubectl google-cloud-cli-gke-gcloud-auth-plugin
+            # Enable gke auth plugin for kubectl
+            export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+            gcloud version
+            kubectl version --client
+
+      ## Authenticate and deploy to GKE
+      - run:
+          name: Authenticate and Deploy
+          command: |
+            echo "$GCLOUD_SERVICE_KEY" | base64 --decode > gcp-key.json
+            gcloud auth activate-service-account --key-file=gcp-key.json
+            gcloud container clusters get-credentials $GKE_CLUSTER \
+              --region $GOOGLE_COMPUTE_REGION \
+              --project $GOOGLE_PROJECT_ID
+            kubectl apply -f kubernetes-deployment.yaml --validate=false
+            kubectl rollout restart deployment medical-app
+
+workflows:
+  version: 2
+  deploy_pipeline:
+    jobs:
+      - build_docker_image
+      - deploy_to_gke:
+          requires:
+            - build_docker_image

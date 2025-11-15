@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: travel-ai-agent
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: travel-ai-agent
+  template:
+    metadata:
+      labels:
+        app: travel-ai-agent
+    spec:
+      containers:
+      - name: travel-ai-agent
+        image: us-central1-docker.pkg.dev/mlops-thilina/llmops-repo/travel-ai-agent:latest
+        ports:
+        - containerPort: 8501
+        env:
+        - name: GROQ_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: llmops-secrets
+              key: GROQ_API_KEY
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: travel-ai-agent-service
+spec:
+  selector:
+    app: travel-ai-agent
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8501
+  type: LoadBalancer
