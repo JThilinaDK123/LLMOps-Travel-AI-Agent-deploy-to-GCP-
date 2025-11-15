@@ -34,8 +34,8 @@ jobs:
             gcloud auth activate-service-account --key-file=gcp-key.json
             gcloud auth configure-docker us-central1-docker.pkg.dev
 
-            docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/llmops-repo/medical-app:latest .
-            docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/llmops-repo/medical-app:latest
+            docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/llmops-repo/travel-ai-agent:latest .
+            docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/llmops-repo/travel-ai-agent:latest
 
   deploy_to_gke:
     executor: python-docker-executor
@@ -69,7 +69,7 @@ jobs:
               --region $GOOGLE_COMPUTE_REGION \
               --project $GOOGLE_PROJECT_ID
             kubectl apply -f kubernetes-deployment.yaml --validate=false
-            kubectl rollout restart deployment medical-app
+            kubectl rollout restart deployment travel-ai-agent
 
 workflows:
   version: 2
