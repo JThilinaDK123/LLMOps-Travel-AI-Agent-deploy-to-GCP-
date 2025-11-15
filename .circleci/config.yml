@@ -15,7 +15,7 @@ jobs:
       - checkout
       - setup_remote_docker
 
-      ## Install Google Cloud SDK with proper key for Ubuntu Jammy
+      ## Install Google Cloud SDK with proper key for Ubuntu
       - run:
           name: Install Google Cloud SDK
           command: |
