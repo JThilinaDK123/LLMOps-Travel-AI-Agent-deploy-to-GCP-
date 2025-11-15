@@ -1,62 +1,268 @@
-/* General layout */
+/* style.css - Professional Theme */
+
+/* General & Typography */
+:root {
+    --primary-color: #0056b3; /* Deep blue for primary actions */
+    --secondary-color: #f8f9fa; /* Light gray for backgrounds */
+    --text-color: #343a40; /* Dark text */
+    --border-color: #ced4da;
+    --success-color: #28a745;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    background: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--secondary-color);
     margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
 }
 
 .container {
-    max-width: 900px;
-    margin: 2em auto;
-    padding: 2em;
+    max-width: 960px;
+    margin: 3em auto;
+    padding: 2.5em;
     background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: var(--primary-color);
     margin-bottom: 1.5em;
+    font-size: 2.2em;
+    font-weight: 300;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5em;
 }
 
-/* Form styling */
+/* Form Styling */
 form {
     display: flex;
-    gap: 1em;
+    gap: 1.5em;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 2em;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    padding: 1em;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: #fcfcfc;
 }
 
-input[type="text"], input[type="number"] {
+input[type="text"], 
+input[type="number"] {
     flex: 1 1 200px;
-    padding: 0.5em;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    padding: 0.8em;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    font-size: 1em;
 }
 
-button {
-    padding: 0.7em 1.5em;
-    border-radius: 6px;
-    background: #007bff;
+input:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 86, 179, 0.25);
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 0.8em 2em;
+    border-radius: 5px;
+    background: var(--primary-color);
     color: #fff;
     border: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #004085;
+    transform: translateY(-1px);
+}
+
+/* Tabs */
+.tabs {
+    display: flex;
+    margin-bottom: 0;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.tab {
+    padding: 0.8em 1.8em;
+    cursor: pointer;
+    border-radius: 6px 6px 0 0;
+    background: #e9ecef;
+    margin-right: 5px;
+    transition: all 0.3s;
+    border: 1px solid var(--border-color);
+    border-bottom: none;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.tab.active {
+    background: #fff;
+    border-bottom: 2px solid #fff; /* Creates the illusion of the tab being part of the content box */
+    font-weight: 700;
+    color: var(--primary-color);
+    border-top: 3px solid var(--primary-color);
+    margin-top: -3px;
+}
+
+/* Tab Content - Report Viewer */
+.tab-content {
+    display: none;
+    background: #fff;
+    padding: 1.5em;
+    border: 1px solid var(--border-color);
+    border-top: none;
+    border-radius: 0 8px 8px 8px;
+    min-height: 450px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Markdown Rendering Styles (Most Important for Readability) */
+.markdown-output {
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 15px; /* Space for scrollbar */
+    font-size: 0.95em;
+}
+
+.markdown-output h2 {
+    color: var(--primary-color);
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 0.3em;
+    margin-top: 1.5em;
+    font-size: 1.6em;
+}
+
+.markdown-output h3 {
+    color: #495057;
+    margin-top: 1.2em;
+    font-size: 1.3em;
+}
+
+.markdown-output p {
+    margin-bottom: 1em;
+}
+
+.markdown-output ul,
+.markdown-output ol {
+    padding-left: 2em;
+    margin-bottom: 1em;
+}
+
+.markdown-output li {
+    margin-bottom: 0.5em;
+}
+
+.markdown-output strong {
+    font-weight: 700;
+}
+
+/* --- UPDATES FOR MARKDOWN BLOCK DESIGN --- */
+
+/* Base style for the report area */
+.markdown-output {
+    max-height: 550px;
+    overflow-y: auto;
+    padding-right: 15px; /* Space for scrollbar */
+    font-size: 0.95em;
+    padding: 10px; /* Base padding */
+}
+
+/* Style for major sections (H2) - Use as a Section Header/Divider */
+.markdown-output h2 {
+    color: var(--primary-color);
+    background-color: #e9f5ff; /* Very light primary background */
+    border-left: 5px solid var(--primary-color);
+    padding: 10px 15px;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 1.6em;
+    font-weight: 600;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle lift */
+}
+
+/* Style for sub-sections (H3) - Use as a Feature/Topic Block Header */
+.markdown-output h3 {
+    color: #495057;
+    border-bottom: 2px dashed #e9ecef;
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+    font-size: 1.3em;
+}
+
+/* Style for lists and paragraphs within a topic - The core 'block' look */
+.markdown-output p,
+.markdown-output ul,
+.markdown-output ol,
+.markdown-output blockquote {
+    /* Create the 'block' look */
+    background: #ffffff; /* Ensure white background */
+    border: 1px solid #f0f0f0; 
+    border-left: 4px solid #ced4da; /* Subtle accent line */
+    padding: 1em;
+    margin-bottom: 1.2em;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03); /* Very light internal shadow */
+}
+
+/* Tighter styling for list items within the blocks */
+.markdown-output ul,
+.markdown-output ol {
+    /* Override list styles that Markdown adds for spacing */
+    list-style-position: inside;
+    padding-left: 2em; /* Ensure list bullets/numbers are visible */
+}
+
+.markdown-output li {
+    margin-bottom: 0.5em;
+    line-height: 1.5;
+}
+
+/* Highlight important text (like prices or dates) */
+.markdown-output strong {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Copy button */
+.copy-btn {
+    padding: 0.4em 1em;
+    border-radius: 4px;
+    background: var(--success-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+    background: #1e7e34;
 }
 
 /* Loader spinner */
 .loader {
-    border: 6px solid #f3f3f3;
-    border-top: 6px solid #007bff;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid var(--primary-color);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     animation: spin 1s linear infinite;
     margin: 2em auto;
     display: none;
@@ -65,75 +271,4 @@ button:hover {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-}
-
-/* Tabs */
-.tabs {
-    display: flex;
-    margin-bottom: 1em;
-    border-bottom: 2px solid #ddd;
-}
-
-.tab {
-    padding: 0.7em 1.5em;
-    cursor: pointer;
-    border-radius: 6px 6px 0 0;
-    background: #eee;
-    margin-right: 5px;
-    transition: 0.3s;
-}
-
-.tab.active {
-    background: #fff;
-    border-bottom: 2px solid #fff;
-    font-weight: bold;
-}
-
-/* Tab content */
-.tab-content {
-    display: none;
-    background: #f9f9f9;
-    padding: 1em;
-    border-radius: 0 12px 12px 12px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* Markdown report content */
-.report-content {
-    background: #fff;
-    padding: 1em;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    max-height: 600px;
-    overflow-y: auto;
-}
-
-.report-content h1,
-.report-content h2,
-.report-content h3 {
-    color: #333;
-}
-
-.report-content ul {
-    padding-left: 1.5em;
-}
-
-/* Copy button */
-.copy-btn {
-    padding: 0.4em 0.8em;
-    border-radius: 6px;
-    background: #28a745;
-    color: white;
-    border: none;
-    cursor: pointer;
-    float: right;
-    margin-bottom: 0.5em;
-}
-
-.copy-btn:hover {
-    background: #218838;
 }

@@ -1,50 +1,56 @@
-I now can give a great answer
+# Sri Lanka Mid-Range Travel Guide 2025
 
-**Sri Lanka Mid-Range Travel Guide**
+## Accommodation
 
-**Accommodation**
+For mid-range travelers, Sri Lanka offers a wide range of comfortable accommodation options, including 3-star hotels, boutique hotels, and guesthouses. Prices start from around 6,000-10,000 LKR (approximately $33-55 USD) per night for a double room.
 
-When it comes to finding affordable accommodation in Sri Lanka, consider staying in local areas, especially in smaller towns and villages. Prices start from around 1,000 LKR (approximately $5 USD) per night for a shared room. Here are some recommendations for mid-range accommodations:
+### Top Mid-Range Accommodation Options
 
-* **Guesthouses:** Look for local guesthouses in Colombo, Kandy, and Galle, which offer comfortable rooms at affordable prices. Some popular options include:
- + The Colombo Guesthouse in Colombo (prices start from 2,500 LKR / $12.50 USD per night)
- + The Kandy Guesthouse in Kandy (prices start from 2,000 LKR / $10 USD per night)
- + The Galle Guesthouse in Galle (prices start from 3,000 LKR / $15 USD per night)
-* **Homestays:** Consider staying in a homestay, which can provide a unique cultural experience and a more authentic experience of Sri Lankan life. Some popular homestay options include:
- + The Colombo Homestay in Colombo (prices start from 2,500 LKR / $12.50 USD per night)
- + The Kandy Homestay in Kandy (prices start from 2,000 LKR / $10 USD per night)
- + The Galle Homestay in Galle (prices start from 3,000 LKR / $15 USD per night)
-* **Budget Hotels:** For a more comfortable stay, consider booking a budget hotel. Some popular options include:
- + The Colombo Budget Hotel in Colombo (prices start from 4,000 LKR / $20 USD per night)
- + The Kandy Budget Hotel in Kandy (prices start from 3,500 LKR / $17.50 USD per night)
- + The Galle Budget Hotel in Galle (prices start from 4,500 LKR / $22.50 USD per night)
+* **Booking.com**: A well-known online booking platform that offers a wide range of accommodation options in Sri Lanka, including 3-star hotels and boutique hotels.
+* **Agoda**: A popular online booking platform that offers a wide range of accommodation options in Sri Lanka, including 3-star hotels and boutique hotels.
+* **Expedia**: A well-known online travel agency that offers a wide range of accommodation options in Sri Lanka, including 3-star hotels and boutique hotels.
 
-**Public Transport**
+### Recommended Mid-Range Hotels and Guesthouses
 
-Sri Lanka has an extensive public transportation system, including buses, trains, and tuk-tuks (three-wheeled vehicles). Here are some recommendations for getting around:
+* **Colombo**: The Cinnamon Grand Colombo (starts from 8,000 LKR / $44 USD per night), The Galadari Hotel Colombo (starts from 7,000 LKR / $39 USD per night), and The Hotel Suisse Colombo (starts from 6,500 LKR / $36 USD per night)
+* **Kandy**: The Cinnamon Citadel Kandy (starts from 7,500 LKR / $41 USD per night), The Jetwing Hotel Kandy (starts from 6,000 LKR / $33 USD per night), and The Hotel Elephant Kandy (starts from 5,500 LKR / $30 USD per night)
+* **Mirissa**: The Cinnamon Wild Yala (starts from 9,000 LKR / $49 USD per night), The Jetwing Mirissa Beach (starts from 8,000 LKR / $44 USD per night), and The Hotel Mirissa (starts from 6,000 LKR / $33 USD per night)
 
-* **Buses:** Buses are the most affordable option, with prices starting from 20 LKR (approximately $0.10 USD) for short distances. Some popular bus routes include:
- + Colombo to Kandy (prices start from 200 LKR / $1 USD)
- + Kandy to Galle (prices start from 300 LKR / $1.50 USD)
- + Galle to Colombo (prices start from 400 LKR / $2 USD)
-* **Trains:** Trains are a convenient option, with prices starting from 100 LKR (approximately $0.50 USD) for a one-way ticket. Some popular train routes include:
- + Colombo to Kandy (prices start from 500 LKR / $2.50 USD)
- + Kandy to Galle (prices start from 700 LKR / $3.50 USD)
- + Galle to Colombo (prices start from 900 LKR / $4.50 USD)
-* **Tuk-tuks:** Tuk-tuks are a convenient option, but be prepared to haggle over prices, which can range from 500-1,500 LKR (approximately $2.50-7.50 USD) for a short ride. Some popular tuk-tuk routes include:
- + Colombo to Kandy (prices start from 1,000 LKR / $5 USD)
- + Kandy to Galle (prices start from 1,200 LKR / $6 USD)
- + Galle to Colombo (prices start from 1,500 LKR / $7.50 USD)
+## Transport
 
-**Food**
+Sri Lanka has a well-developed public transportation system, making it easy to get around the country. Here are some options for mid-range travelers:
 
-Sri Lankan cuisine is delicious and affordable, with meals starting from 100 LKR (approximately $0.50 USD) at local eateries. Here are some recommendations for affordable dining options:
+### Domestic Flights
 
-* **Street Food:** Try traditional dishes like rice and curry, hoppers, and string hoppers, which are all relatively cheap. Some popular street food options include:
- + The Street Food Market in Colombo (prices start from 100 LKR / $0.50 USD)
- + The Street Food Market in Kandy (prices start from 100 LKR / $0.50 USD)
- + The Street Food Market in Galle (prices start from 150 LKR / $0.75 USD)
-* **Local Eateries:** Try local eateries, which offer delicious and affordable meals. Some popular options include:
- + The Rice and Curry Restaurant in Colombo (prices start from 200 LKR / $1 USD)
- + The Kandy Restaurant in Kandy (prices start from 250 LKR / $1.25 USD)
- + The Galle Restaurant in Galle (prices start from 300 LKR /
+* **SriLankan Airlines**: A national carrier that offers domestic flights to major cities in Sri Lanka, with prices starting from around 5,000 LKR (approximately $28 USD) per trip.
+* **Cinnamon Air**: A boutique airline that offers domestic flights to major cities in Sri Lanka, with prices starting from around 6,000 LKR (approximately $33 USD) per trip.
+
+### Recommended Domestic Flight Routes
+
+* **Colombo to Kandy**: Take a domestic flight from Colombo Airport to Kandy Airport (around 1 hour, 5,000 LKR / $28 USD).
+* **Kandy to Mirissa**: Take a domestic flight from Kandy Airport to Mirissa Airport (around 1 hour, 6,000 LKR / $33 USD).
+
+### Train and Bus Services
+
+* **Train**: A popular option for long-distance travel, with prices starting from around 200 LKR (approximately $1.10 USD) per trip.
+* **Bus**: A cheap and convenient option for short-distance travel, with prices starting from around 100 LKR (approximately $0.55 USD) per trip.
+
+### Recommended Train and Bus Routes
+
+* **Colombo to Kandy**: Take the train from Colombo Fort Station to Kandy Station (around 4 hours, 200 LKR / $1.10 USD).
+* **Kandy to Mirissa**: Take the bus from Kandy Bus Station to Mirissa Bus Station (around 2 hours, 100 LKR / $0.55 USD).
+
+## Food
+
+Sri Lanka is famous for its delicious and affordable street food, with prices starting from around 200 LKR (approximately $1.10 USD) per meal. Here are some options for mid-range travelers:
+
+### Mid-Range Restaurants
+
+* **The Lighthouse Restaurant**: A popular restaurant in Colombo that serves a range of international and local dishes, with prices starting from around 1,000 LKR (approximately $5.50 USD) per meal.
+* **The Kandy Restaurant**: A popular restaurant in Kandy that serves a range of international and local dishes, with prices starting from around 800 LKR (approximately $4.40 USD) per meal.
+* **The Mirissa Restaurant**: A popular restaurant in Mirissa that serves a range of international and local dishes, with prices starting from around 1,200 LKR (approximately $6.60 USD) per meal.
+
+### Recommended Mid-Range Restaurants
+
+* **Colombo**: The Ministry of Crab (starts from 1,500 LKR / $8.30 USD per meal), The Havelock Restaurant (starts from 1,200 LKR / $6.60 USD per meal), and The Gallery Cafe (starts from 1,000 LKR / $5.50 USD per meal)
+* **
