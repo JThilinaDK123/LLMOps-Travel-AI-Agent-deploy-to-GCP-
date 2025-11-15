@@ -4,3 +4,5 @@ litellm
 flask
 markdown
 markupsafe
+tavily-python
+crewai-tools

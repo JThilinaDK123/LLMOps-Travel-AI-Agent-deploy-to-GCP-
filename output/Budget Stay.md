@@ -1,63 +1,74 @@
 Thought: I now can give a great answer
 
-# Sri Lanka Budget Travel Guide 2025
+# Sri Lanka on a Budget: A Traveler's Guide
+
+Sri Lanka is a beautiful island nation in South Asia known for its stunning beaches, ancient ruins, and vibrant culture. As a budget traveler, you can explore this incredible country without breaking the bank. Here's a comprehensive guide to help you plan your trip and make the most of your time in Sri Lanka.
 
 ## Accommodation
 
-Sri Lanka offers a wide range of affordable accommodation options, from budget-friendly hostels and guesthouses to luxury resorts. As a budget traveler, you can expect to pay around 1,500-2,500 LKR (approximately $8-14 USD) per night for a dormitory or private room in a hostel or guesthouse.
+When it comes to accommodation, Sri Lanka has a wide range of options to suit all budgets. Here are some affordable options to consider:
 
-### Top Budget-Friendly Accommodation Options
+### Hostels and Guesthouses
 
-* **Hostelworld**: A popular hostel booking platform with a wide range of options in Sri Lanka. Prices start from around 1,500 LKR ($8 USD) per night.
-* **Booking.com**: A well-known online booking platform that offers a wide range of accommodation options in Sri Lanka, including budget-friendly hostels and guesthouses.
-* **Airbnb**: A great option for budget travelers who want to stay in a local's home or apartment. Prices start from around 2,000 LKR ($11 USD) per night.
+* **Colombo**: Stay at the Colombo Hostel (Rs 1,500 - Rs 2,500 / $8 - $15 USD per night) or the 57th Hostel (Rs 1,200 - Rs 2,000 / $7 - $12 USD per night).
+* **Mirissa**: The Mirissa Beach Hostel (Rs 1,000 - Rs 2,000 / $6 - $12 USD per night) is a great option for beach lovers.
+* **Kandy**: The Kandy Hostel (Rs 1,200 - Rs 2,500 / $7 - $15 USD per night) is a good choice for those interested in exploring the cultural city of Kandy.
 
-### Recommended Hostels and Guesthouses
+### Budget Hotels
 
-* **Colombo**: The Beach Hostel (starts from 1,800 LKR / $10 USD per night) and The Hostel Colombo (starts from 2,000 LKR / $11 USD per night)
-* **Kandy**: The Kandy Hostel (starts from 1,500 LKR / $8 USD per night) and The Guest House Kandy (starts from 2,200 LKR / $12 USD per night)
-* **Mirissa**: The Mirissa Hostel (starts from 1,800 LKR / $10 USD per night) and The Beach Guest House (starts from 2,500 LKR / $14 USD per night)
+* **Cinnamon Wild Yala**: This eco-lodge offers comfortable rooms starting from Rs 5,000 / $28 USD per night.
+* **The Elephant Transit Home**: This unique hotel in Udawalawe offers rooms starting from Rs 4,000 / $22 USD per night.
+
+### Homestays
+
+* **Experience Sri Lankan culture** by staying with a local family. Homestays are available in various parts of the country, with prices starting from Rs 1,500 / $8 USD per night.
 
 ## Transport
 
-Sri Lanka has a well-developed public transportation system, making it easy to get around the country on a budget. Here are some options:
+Getting around Sri Lanka can be affordable and convenient with these budget-friendly options:
 
 ### Public Transport
 
-* **Train**: A popular option for long-distance travel, with prices starting from around 100 LKR ($0.55 USD) per trip.
-* **Bus**: A cheap and convenient option for short-distance travel, with prices starting from around 50 LKR ($0.28 USD) per trip.
-* **Tuk-Tuk**: A three-wheeled vehicle that's a popular mode of transportation in Sri Lanka, with prices starting from around 200 LKR ($1.10 USD) per trip.
+* **Buses**: Sri Lanka's bus network is extensive and affordable. You can travel from one end of the country to the other for Rs 100 - Rs 500 / $0.60 - $3 USD.
+* **Trains**: Trains are another affordable option, with prices starting from Rs 100 / $0.60 USD for a one-way ticket.
 
-### Recommended Public Transport Routes
+### Tuk-Tuks
 
-* **Colombo to Kandy**: Take the train from Colombo Fort Station to Kandy Station (around 4 hours, 100 LKR / $0.55 USD).
-* **Kandy to Mirissa**: Take the bus from Kandy Bus Station to Mirissa Bus Station (around 2 hours, 50 LKR / $0.28 USD).
-* **Mirissa to Galle**: Take the train from Mirissa Station to Galle Station (around 2 hours, 100 LKR / $0.55 USD).
+* **Three-wheeled tuk-tuks** are a common mode of transport in Sri Lanka. You can hire one for the day for around Rs 2,000 - Rs 3,000 / $12 - $18 USD.
+
+### Renting a Scooter
+
+* **Rent a scooter** for around Rs 1,500 - Rs 2,500 / $8 - $15 USD per day to explore the countryside.
 
 ## Food
 
-Sri Lanka is famous for its delicious and affordable street food, with prices starting from around 100 LKR ($0.55 USD) per meal. Here are some options:
+Sri Lankan cuisine is a fusion of Indian, Chinese, and Middle Eastern flavors. You can enjoy delicious meals at affordable prices:
 
 ### Street Food
 
-* **Hoppers**: A popular Sri Lankan breakfast dish made from rice flour and coconut milk, with prices starting from around 100 LKR ($0.55 USD) per serving.
-* **String Hoppers**: A type of steamed rice noodle dish, with prices starting from around 150 LKR ($0.83 USD) per serving.
-* **Pittu**: A type of steamed rice cake, with prices starting from around 100 LKR ($0.55 USD) per serving.
+* **Hoppers**: A classic Sri Lankan breakfast dish made from rice flour and coconut milk. Cost: Rs 50 - Rs 100 / $0.30 - $0.60 USD.
+* **Pittu**: A traditional Sri Lankan breakfast dish made from steamed rice flour. Cost: Rs 50 - Rs 100 / $0.30 - $0.60 USD.
+* **Kottu**: A popular street food made from roti, vegetables, and meat. Cost: Rs 100 - Rs 200 / $0.60 - $1.20 USD.
 
-### Recommended Street Food Markets
+### Markets
 
-* **Colombo**: The Colombo Street Food Market (starts from 100 LKR / $0.55 USD per meal) and The Pettah Market (starts from 150 LKR / $0.83 USD per meal)
-* **Kandy**: The Kandy Street Food Market (starts from 100 LKR / $0.55 USD per meal) and The Temple of the Tooth Market (starts from 150 LKR / $0.83 USD per meal)
-* **Mirissa**: The Mirissa Street Food Market (starts from 100 LKR / $0.55 USD per meal) and The Beach Market (starts from 150 LKR / $0.83 USD per meal)
+* ** Pettah Market** in Colombo: A bustling market offering a wide range of fresh produce, spices, and souvenirs. Cost: Rs 500 - Rs 1,000 / $3 - $6 USD per meal.
+* **Kandy Market**: A vibrant market offering a variety of local snacks and drinks. Cost: Rs 200 - Rs 500 / $1.20 - $3 USD per meal.
+
+### Restaurants
+
+* **The Rice & Rice**: A popular restaurant in Colombo offering a range of Sri Lankan and international dishes. Cost: Rs 500 - Rs 1,000 / $3 - $6 USD per meal.
+* **The Elephant Stables**: A restaurant in Kandy offering a range of Sri Lankan and international dishes. Cost: Rs 500 - Rs 1,000 / $3 - $6 USD per meal.
 
 ## Activities
 
-Sri Lanka has a rich cultural heritage and a diverse range of activities to suit all budgets. Here are some options:
+Sri Lanka has a rich cultural heritage and stunning natural beauty. Here are some budget-friendly activities to enjoy:
 
 ### Free Attractions
 
-* **Colombo National Museum**: A museum showcasing Sri Lanka's history and culture, with free admission.
-* **Kandy Temple of the Tooth**: A sacred Buddhist temple and one of Sri Lanka's most famous attractions, with free admission.
-* **Mirissa Beach**: A beautiful beach with crystal-clear waters and powdery white sand, with free admission.
+* **Galle Fort**: A UNESCO World Heritage Site and a must-visit attraction in Sri Lanka. Cost: Free.
+* **National Museum of Colombo**: A great place to learn about Sri Lanka's history and culture. Cost: Rs 200 / $1.20 USD.
 
-### Low-C
+### Low-Cost Attractions
+
+* **Yala National Park**:

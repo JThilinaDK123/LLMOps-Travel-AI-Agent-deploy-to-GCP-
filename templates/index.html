@@ -61,18 +61,12 @@
         {% if reports %}
         <div class="tabs">
             <div class="tab active" data-tab="budget">Budget</div>
-            <div class="tab" data-tab="mid">Mid-Range</div>
             <div class="tab" data-tab="luxury">Luxury</div>
         </div>
 
         <div id="budget" class="tab-content active">
             <div class="markdown-output" id="budget-text">
                 {{ reports['Budget Stay.md'] | safe }} 
-            </div>
-        </div>
-        <div id="mid" class="tab-content">
-            <div class="markdown-output" id="mid-text">
-                {{ reports['Mid Stay.md'] | safe }}
             </div>
         </div>
         <div id="luxury" class="tab-content">

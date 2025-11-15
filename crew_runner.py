@@ -1,4 +1,6 @@
 from crewai import Agent, Task, Crew, LLM
+# from crewai_tools import TavilySearchTool
+import os
 
 def run_travel_planner(country, current_year):
     
@@ -10,19 +12,18 @@ def run_travel_planner(country, current_year):
         stream=True
     )
 
+    # tavily_tool = TavilySearchTool(
+    #     api_key = os.environ.get("TAVILY_API_KEY"),
+    #     include_answer = True,
+    #     max_results = 5
+    # )
+
     budget_travel_agent = Agent(
         role='Budget-Friendly Travel Planning Expert',
         goal='Create cost-effective itineraries, cheap stays, public transport options based on the given country.',
         backstory='A travel expert specialized in budget trips.',
         llm=llm,
-        verbose=False
-    )
-
-    intermediate_travel_agent = Agent(
-        role='Mid-Range Travel Planner',
-        goal='Provide a comfortable itinerary with balanced cost and comfort.',
-        backstory='A seasoned traveler designing efficient itineraries.',
-        llm=llm,
+        # tools=[tavily_tool],
         verbose=False
     )
 
@@ -31,6 +32,7 @@ def run_travel_planner(country, current_year):
         goal='Design high-end, premium travel itineraries.',
         backstory='A luxury concierge specializing in premium experiences.',
         llm=llm,
+        # tools=[tavily_tool],
         verbose=False
     )
 
@@ -39,14 +41,6 @@ def run_travel_planner(country, current_year):
         expected_output="A **complete markdown-formatted travel report** for budget travelers in 3-5 sections (e.g., Accommodation, Transport, Food, Activities). Do not use code block markers ('```').",
         agent=budget_travel_agent,
         output_file="output/Budget Stay.md",
-        dependencies=[]
-    )
-
-    intermediate_task = Task(
-        description=f'Conduct detailed research about traveling in {country} in the year {current_year}. **Create a complete, standalone markdown travel report** focused on mid-range options, including 3-star hotels, comfortable transport (trains, domestic flights), a mix of local restaurants and mid-range dining, and popular paid attractions. The report must be a detailed guide for a mid-range traveler.',
-        expected_output="A **complete markdown-formatted travel report** for mid-range travelers in 3-5 sections (e.g., Accommodation, Transport, Food, Activities). Do not use code block markers ('```').",
-        agent=intermediate_travel_agent,
-        output_file="output/Mid Stay.md",
         dependencies=[]
     )
 
@@ -59,8 +53,8 @@ def run_travel_planner(country, current_year):
     )
 
     crew = Crew(
-        agents=[budget_travel_agent, intermediate_travel_agent, luxury_travel_agent],
-        tasks=[budget_task, intermediate_task, luxury_task],
+        agents=[budget_travel_agent, luxury_travel_agent],
+        tasks=[budget_task, luxury_task],
         verbose=False
     )
 
@@ -68,7 +62,7 @@ def run_travel_planner(country, current_year):
     result = crew.kickoff(inputs=inputs)
 
     reports = {}
-    for file in ["output/Budget Stay.md", "output/Mid Stay.md", "output/Luxury Stay.md"]:
+    for file in ["output/Budget Stay.md",  "output/Luxury Stay.md"]:
         with open(file, "r") as f:
             reports[file.split('/')[-1]] = f.read()
     
