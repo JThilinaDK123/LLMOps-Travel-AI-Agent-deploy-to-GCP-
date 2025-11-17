@@ -147,4 +147,4 @@ kubectl create secret generic llmops-secrets \
 ---
 
 
-Trigger the CI/CD pipeline Again !!!!!
+Trigger the CI/CD pipeline Again !!!!
