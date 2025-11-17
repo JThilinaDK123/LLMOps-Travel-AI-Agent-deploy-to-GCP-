@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from app.crew_runner import run_travel_planner
+from crew_runner import run_travel_planner
 import markdown
 
 app = Flask(__name__)
