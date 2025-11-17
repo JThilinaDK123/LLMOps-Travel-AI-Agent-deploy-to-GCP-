@@ -4,6 +4,7 @@
 
 - LLM Groq  
 - Crew AI  
+- Tavily Search API
 - Google Artifact Registry
 - Google Kubernetes Cluster  
 - Circle CI    
@@ -37,8 +38,8 @@ GROQ_API_KEY=<your_groq_api_key>
 ```
 static/style.css           
 templates/index.html
-app.py              # Flask Backend code
-crew_runner.py      # Crew AI agent and tasks     
+app/app.py              # Flask Backend code
+app/crew_runner.py      # Crew AI agent and tasks     
 setup.py            # Project setup and management script
 ```
 
