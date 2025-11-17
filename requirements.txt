@@ -6,3 +6,7 @@ markdown
 markupsafe
 tavily-python
 crewai-tools
+langchain
+langchain-community
+python-dotenv
+sentence-transformers

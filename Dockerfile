@@ -18,4 +18,4 @@ RUN pip install --no-cache-dir -e .
 
 EXPOSE 8501
 
-CMD ["python", "app.py"]
+CMD ["python", "app/app.py"]

@@ -6,42 +6,26 @@
     <title>Travel Planner</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <style>
-        /* Container & layout */
         body { font-family: 'Arial', sans-serif; background: #f5f5f5; margin: 0; }
         .container { max-width: 900px; margin: 2em auto; padding: 2em; background: #fff; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
         h1 { text-align: center; color: #333; margin-bottom: 1.5em; }
 
-        /* Form */
         form { display: flex; gap: 1em; flex-wrap: wrap; justify-content: space-between; margin-bottom: 2em; }
-        input[type="text"], input[type="number"] { flex: 1 1 200px; padding: 0.5em; border-radius: 6px; border: 1px solid #ccc; }
+        input[type="text"] { flex: 1 1 200px; padding: 0.5em; border-radius: 6px; border: 1px solid #ccc; }
         button { padding: 0.7em 1.5em; border-radius: 6px; background: #007bff; color: #fff; border: none; cursor: pointer; transition: 0.3s; }
         button:hover { background: #0056b3; }
 
-        /* Tabs */
         .tabs { display: flex; margin-bottom: 1em; border-bottom: 2px solid #ddd; }
         .tab { padding: 0.7em 1.5em; cursor: pointer; border-radius: 6px 6px 0 0; background: #eee; margin-right: 5px; transition: 0.3s; }
         .tab.active { background: #fff; border-bottom: 2px solid #fff; font-weight: bold; }
 
-        /* Tab content */
-        /* Changed to a regular div for rendered content */
         .tab-content { display: none; background: #f9f9f9; padding: 1em; border-radius: 0 12px 12px 12px; box-shadow: inset 0 0 10px rgba(0,0,0,0.05); }
         .tab-content.active { display: block; }
-        
-        /* New styling for markdown-rendered content */
-        .markdown-output {
-            padding: 1em;
-            background-color: #fff;
-            border-radius: 6px;
-            border: 1px solid #eee;
-        }
-        /* Add basic styling for elements created by markdown (H tags, P, UL, etc.) */
+
+        .markdown-output { padding: 1em; background-color: #fff; border-radius: 6px; border: 1px solid #eee; }
         .markdown-output h2 { color: #007bff; border-bottom: 1px solid #eee; padding-bottom: 0.2em; }
         .markdown-output ul { list-style-type: disc; margin-left: 1.5em; }
 
-        /* Copy button is no longer needed since the content is rendered HTML, not raw text */
-        /* You might want to implement a 'copy text' function by getting the innerText of the div, but I've removed the button for simplicity. */
-
-        /* Loader */
         .loader { border: 6px solid #f3f3f3; border-top: 6px solid #007bff; border-radius: 50%; width: 40px; height: 40px; animation: spin 1s linear infinite; margin: 2em auto; display: none; }
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
     </style>
@@ -52,7 +36,6 @@
 
         <form id="travelForm" method="post">
             <input type="text" name="country" placeholder="Enter country" required>
-            <input type="number" name="year" placeholder="Enter year" required>
             <button type="submit">Generate Travel Plan</button>
         </form>
 
@@ -60,25 +43,47 @@
 
         {% if reports %}
         <div class="tabs">
-            <div class="tab active" data-tab="budget">Budget</div>
-            <div class="tab" data-tab="luxury">Luxury</div>
+            <div class="tab active" data-tab="stays">Accommodations</div>
+            <div class="tab" data-tab="temperature">Temperature</div>
+            <div class="tab" data-tab="airlines">Airlines</div>
+            <div class="tab" data-tab="attractive_places">Popular Destinations</div>
+            <div class="tab" data-tab="currency">Exchange Rates</div>
         </div>
 
-        <div id="budget" class="tab-content active">
-            <div class="markdown-output" id="budget-text">
-                {{ reports['Budget Stay.md'] | safe }} 
+        <div id="stays" class="tab-content active">
+            <div class="markdown-output" id="stays-text">
+                {{ reports['Stays.md'] | safe }} 
             </div>
         </div>
-        <div id="luxury" class="tab-content">
-            <div class="markdown-output" id="luxury-text">
-                {{ reports['Luxury Stay.md'] | safe }}
+
+        <div id="temperature" class="tab-content">
+            <div class="markdown-output" id="temperature-text">
+                {{ reports['Temperature.md'] | safe }}
             </div>
         </div>
+
+        <div id="airlines" class="tab-content">
+            <div class="markdown-output" id="airlines-text">
+                {{ reports['Airlines.md'] | safe }}
+            </div>
+        </div>
+
+        <div id="attractive_places" class="tab-content">
+            <div class="markdown-output" id="attractive_places-text">
+                {{ reports['Attractions.md'] | safe }}
+            </div>
+        </div>
+
+        <div id="currency" class="tab-content">
+            <div class="markdown-output" id="currency-text">
+                {{ reports['Currency.md'] | safe }}
+            </div>
+        </div>
+
         {% endif %}
     </div>
 
     <script>
-        // Tabs
         const tabs = document.querySelectorAll('.tab');
         const contents = document.querySelectorAll('.tab-content');
         tabs.forEach(tab => {
@@ -90,10 +95,6 @@
             });
         });
 
-        // Copy function is removed as it's no longer a textarea, 
-        // but the form submission logic is kept.
-
-        // Loader
         const form = document.getElementById('travelForm');
         const loader = document.getElementById('loader');
         form.addEventListener('submit', () => {

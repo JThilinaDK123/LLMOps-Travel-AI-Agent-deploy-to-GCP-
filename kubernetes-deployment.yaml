@@ -23,6 +23,12 @@ spec:
             secretKeyRef:
               name: llmops-secrets
               key: GROQ_API_KEY
+
+        - name: TAVILY_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: llmops-secrets
+              key: TAVILY_API_KEY
 ---
 
 apiVersion: v1

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from crew_runner import run_travel_planner
+from app.crew_runner import run_travel_planner
 import markdown
 
 app = Flask(__name__)
@@ -11,9 +11,8 @@ def index():
 
     if request.method == "POST":
         country = request.form.get("country")
-        year = request.form.get("year")
-        if country and year:
-            reports = run_travel_planner(country, year)
+        if country:
+            reports = run_travel_planner(country)
             if reports:
                 for key, content in reports.items():
                     html_reports[key] = markdown.markdown(content)
