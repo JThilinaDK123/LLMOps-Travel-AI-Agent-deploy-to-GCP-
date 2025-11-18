@@ -141,7 +141,7 @@ gcloud container clusters get-credentials llmops-project \
 ```bash
 kubectl create secret generic llmops-secrets \
   --from-literal=GROQ_API_KEY="YOUR_GROQ_KEY" \
-  --from-literal=PINECONE_API_KEY="TAVILY_API_KEY"
+  --from-literal=TAVILY_API_KEY="TAVILY_API_KEY"
 ```
 
 ---
